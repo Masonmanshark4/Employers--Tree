@@ -9,13 +9,13 @@ const connection = mysql.createConnection({
     password: 'Perrin420!',
     database: 'employee_db',
 });
-
+// Connect to the MySQL server
 connection.connect((err) => {
     if (err) throw err;
     console.log('connected as id ' + connection.threadId);
     start();
 });
-
+// Start the application
 function start() {
     inquirer
         .prompt({
@@ -185,7 +185,7 @@ function addEmployee() {
             );
         });
 }
-
+// View Departments, Roles, Employees
 function viewDepartments() {
     connection.query('SELECT * FROM department', (err, res) => {
         if (err) throw err;
@@ -209,7 +209,7 @@ function viewEmployees() {
         start();
     });
 }
-
+// Update Employee Role
 function updateEmployeeRole() {
     inquirer
         .prompt([
@@ -243,7 +243,7 @@ function updateEmployeeRole() {
             );
         });
 }
-
+// Delete Department, Role, Employee
 function deleteDepartment() {
     inquirer
         .prompt({
