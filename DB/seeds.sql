@@ -1,5 +1,5 @@
 USE employees_db;
-
+-- Insert data into tables
 INSERT INTO department (name)
 VALUES ("Outdoors");
 INSERT INTO department (name)
