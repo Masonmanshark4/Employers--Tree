@@ -26,7 +26,7 @@ function start() {
                 'Add Department',
                 'Add Role',
                 'Add Employee',
-                'View Departments',
+                'View Department',
                 'View Roles',
                 'View Employees',
                 'Update Employee Role',
